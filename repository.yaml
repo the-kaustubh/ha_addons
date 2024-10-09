@@ -1,0 +1,4 @@
+# https://developers.home-assistant.io/docs/add-ons/repository#repository-configuration
+name: Custom Home Assistant add-on repository
+url: 'https://github.com/the-kaustubh/ha_addons'
+maintainer: Kaustubh Murumkar <kaustubh.murumkar@gmail.com>

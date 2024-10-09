@@ -1,0 +1,22 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug",
+            "type": "go",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/main.go",
+            "console": "integratedTerminal",
+            "env": {
+                "SERVER_PORT": "8000",
+                "POSTGRES_DATABASE_URL": "postgresql://postgres:homeassistant@homeassistant.local:5432/grafana",
+                "LOG_LEVEL": "debug",
+                "LOG_FORMAT": "json"
+            }
+
+        }
+    ]
+}

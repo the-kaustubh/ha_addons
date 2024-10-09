@@ -1,0 +1,22 @@
+name: "HA data aggregator"
+description: "aggregates data from devices to databases. Currently on pgsql supported"
+version: "1.1.4"
+slug: "ha_data_aggregator"
+init: true
+arch:
+  - aarch64
+  - amd64
+  - armhf
+  - armv7
+  - i386
+startup: services
+hassio_api: true
+ports:
+  8000/tcp: 8000
+environment:
+  - SERVER_PORT=8000
+  - POSTGRES_DATABASE_URL=postgresql://postgres:homeassistant@homeassistant.local:5432/grafana
+  - LOG_LEVEL=info
+  - LOG_FORMAT=json
+config-file: |
+  name:
